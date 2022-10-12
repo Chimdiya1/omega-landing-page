@@ -19,7 +19,7 @@ const Nav = () => {
         <Button className="menu-item">Connect wallet</Button>
       </ul>
       <Button>Connect wallet</Button>
-      <img className="menu-btn" src={Menu} onClick={() => setOpen(!open)} />
+      <img className="menu-btn" alt="menu" src={Menu} onClick={() => setOpen(!open)} />
     </nav>
   );
 };
