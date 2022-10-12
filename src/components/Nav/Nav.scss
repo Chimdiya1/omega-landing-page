@@ -1,0 +1,92 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 175px;
+  background: #0d1520;
+  border-bottom: 1px solid #303a4e;
+  padding: 0 6%;
+  .logo {
+    display: flex;
+    align-items: baseline;
+    img {
+      margin-right: 0.5rem;
+      width: 36px;
+    }
+    span {
+      font-family: "Space Grotesk";
+      color: #f4f4f5;
+      font-weight: 500;
+      font-size: 36px;
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 520px;
+    width: 60%;
+    .menu-item {
+      color: #f4f4f5;
+      list-style: none;
+      font-size: 20px;
+      &:hover {
+        color: #acff9e;
+        cursor: pointer;
+      }
+      &.active {
+        color: #acff9e;
+      }
+    }
+    button {
+      display: none;
+    }
+  }
+  .menu-btn {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 1rem 0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    button{
+      display: none;
+    }
+    .logo {
+      margin-left: 2rem;
+    }
+    .menu-btn {
+      display: block;
+      margin-right: 2rem;
+      width: 40px;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      width: 100%;
+      max-width: 100%;
+      &.open {
+        display: flex;
+      }
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0 8rem;
+      flex-direction: column;
+      position: fixed;
+      top: 100px;
+      height: 100%;
+      background-color: #0d1520;
+      button {
+        display: block;
+      }
+      li {
+        margin: 2rem;
+
+      }
+      transition: all 0.4s ease;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.howItWorks {
+  padding: 0 84px;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-family: "Space Grotesk";
+    margin-bottom: 94px;
+    font-size: "48px";
+    text-align: center;
+  }
+  .how {
+    display: flex;
+    margin-bottom: 144px;
+    justify-content: space-between;
+    .img-container {
+      max-width: 500px;
+    }
+    &.rev {
+      flex-direction: row-reverse;
+      h3 {
+        right: 0;
+      }
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      h2 {
+        margin-bottom: 28px;
+        font-family: "Space Grotesk";
+        font-weight: 700;
+        font-size: 36px;
+      }
+      p {
+        width: 525px;
+      }
+      h3 {
+        position: absolute;
+        bottom: 0;
+        font-size: 400px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.06);
+      }
+    }
+  }
+  .goto {
+    max-width: 500px;
+    margin: auto;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 2rem;
+    .how {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img-container {
+        max-width: 500px;
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &.rev {
+        flex-direction: column;
+        // h3 {
+        //   right: 0;
+        // }
+      }
+      .col {
+        align-items: center;
+        h2 {
+          margin-bottom: 28px;
+          font-family: "Space Grotesk";
+          font-weight: 700;
+          font-size: 36px;
+          text-align: center;
+        }
+        p {
+          width: 80%;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+        h3 {
+          display: none;
+
+        }
+      }
+    }
+  }
+}

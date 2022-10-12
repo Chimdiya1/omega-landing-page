@@ -1,0 +1,21 @@
+.invertedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 16px;
+  width: 197px;
+  height: 56px;
+  position: relative;
+  border: none;
+  margin: 5px;
+  z-index: 5;
+  background-color: red;
+  border-radius: 52px;
+  background: linear-gradient(#0d1520, #0d1520) padding-box,
+    linear-gradient(136.33deg, #efff8d 16.28%, rgba(30, 158, 51, 0.7) 100%)
+      border-box;
+  border: 1px solid transparent;
+}

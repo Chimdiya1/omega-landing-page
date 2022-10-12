@@ -1,0 +1,30 @@
+.stakingPools {
+  display: flex;
+  flex-direction: column;
+  padding: 0 84px;
+  width: 100%;
+  align-items: center;
+  margin-top: 241px;
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+    h2 {
+      font-family: "Space Grotesk";
+      font-weight: 700;
+      font-size: 48px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 36px;
+    .title {
+      h2 {
+        font-family: "Space Grotesk";
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
+  }
+}
