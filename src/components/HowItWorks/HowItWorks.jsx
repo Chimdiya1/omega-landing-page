@@ -3,6 +3,8 @@ import "./HowItWorks.scss";
 import joinPool from "../../assets/joinpool.png";
 import joinRaffle from "../../assets/joinraffle.png";
 import goToPool from "../../assets/gotopool.png";
+import rightArrow from "../../assets/right-arrow.png";
+import Button from "../Button/Button";
 const HowItWorks = () => {
   return (
     <div className="howItWorks">
@@ -37,6 +39,16 @@ const HowItWorks = () => {
       <h1 style={{ marginBottom: "80px" }}>Voilla! You’re in the raffle!</h1>
       <div className="goto">
         <img src={goToPool} alt="goto pool" />
+      </div>
+      <div style={{margin:"auto", marginTop:"88px"}}>
+        <Button>
+          Start Playing{" "}
+          <img
+            src={rightArrow}
+            style={{ marginLeft: "12px" }}
+            alt="right arrow"
+          />
+        </Button>
       </div>
     </div>
   );
